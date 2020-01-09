@@ -14,6 +14,7 @@ variable "domain_name" {}
 
 variable "flowmanager_repository" {}
 variable "flowmanager_checksum" {}
+variable "flowmanager_tag" {}
 
 variable "replica_count" {}
 variable "requests_cpu" {}
@@ -43,6 +44,7 @@ data "template_file" "flowmanager_values" {
     domain_name            = "${var.domain_name}"
     flowmanager_repository = "${var.flowmanager_repository}"
     flowmanager_checksum   = "${var.flowmanager_checksum}"
+    flowmanager_tag        = "${var.flowmanager_tag}"
     couchdb_admin_username = "${var.secret_couchdb_admin_username}"
     couchdb_admin_password = "${var.secret_couchdb_admin_password}"
     replica_count          = "${var.replica_count}"

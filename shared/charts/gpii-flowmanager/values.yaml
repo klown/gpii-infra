@@ -33,6 +33,7 @@ enableStackdriverTrace: false
 image:
   repository: gpii/universal
   checksum: sha256:652ed9dc86639d51e806356737567336339c9eb675193ba04b2c5346de3bdee6
+  tag: 20190809170605-f8485e9
   pullPolicy: IfNotPresent
 
 rollingUpdate:

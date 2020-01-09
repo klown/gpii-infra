@@ -3,6 +3,7 @@ replicaCount: ${replica_count}
 image:
   repository: ${flowmanager_repository}
   checksum: ${flowmanager_checksum}
+  tag: ${flowmanager_tag}
 
 acme:
   clouddnsProject: ${project_id}
